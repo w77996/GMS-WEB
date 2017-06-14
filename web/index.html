@@ -20,29 +20,7 @@
 		<link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color">
 
 		<style type="text/css">
-			.jqstooltip {
-				position: absolute;
-				left: 0px;
-				top: 0px;
-				visibility: hidden;
-				background: rgb(0, 0, 0) transparent;
-				background-color: rgba(0, 0, 0, 0.6);
-				filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-				color: white;
-				font: 10px arial, san serif;
-				text-align: left;
-				white-space: nowrap;
-				padding: 5px;
-				border: 1px solid white;
-				z-index: 10000;
-			}
 			
-			.jqsfield {
-				color: white;
-				font: 10px arial, san serif;
-				text-align: left;
-			}
 		</style>
 
 	</head>
@@ -67,8 +45,8 @@
 						</a>
 					</li>
 					<li class="dropdown dropdown-user">
-						<a href="javascript:;" class="dropdown-toggle">
-							<span class="username username-hide-on-mobile" style="color: white;"> 修改密码</span>
+						<a href="modify_password.html" class="dropdown-toggle">
+							<span class="username username-hide-on-mobile" style="color:#79869a;">修改密码<!--<a href="modify_password.html">修改密码</a>--></span>
 							<i></i>
 						</a>
 					</li>
@@ -86,7 +64,7 @@
 		<div class="clearfix"> </div>
 		<!--右侧网页内容开始-->
 		<div class="page-container">
-			<div class="page-sidebar-wrapper">
+			<div class="page-sidebar-wrapper" >
 				<div class="page-sidebar navbar-collapse collapse">
 					<!--左侧菜单开始-->
 					<ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
@@ -102,71 +80,77 @@
 						</li>
 						<li class="nav-item">
 							<a href="javascript:;" class="nav-link nav-toggle">
-								<i class="icon-home"></i>
+								<i class="icon-grid"></i>
 								<span class="title">设备统计</span>
 								<span class="arrow"></span>
 							</a>
 							<ul class="sub-menu">
 								<li class="nav-item ">
 									<a href="regional_distribution.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-map"></i>
 										<span class="title">地区分布</span>
 									</a>
 								</li>
 								<li class="nav-item  ">
 									<a href="device_activation.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-cloud-upload"></i>
 										<span class="title">设备激活</span>
 									</a>
 								</li>
 								<li class="nav-item  ">
 									<a href="device_active.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-graph"></i>
 										<span class="title">设备活跃</span>
 									</a>
 								</li>
 								<li class="nav-item  ">
 									<a href="device_add.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-note"></i>
 										<span class="title">设备入库</span>
 									</a>
 								</li>
 								<li class="nav-item  ">
 									<a href="report_statistics.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-notebook"></i>
 										<span class="title">报表统计</span>
+									</a>
+								</li>
+								<li class="nav-item  ">
+									<a href="device_statistics.html" class="nav-link">
+										<i class="icon-screen-tablet"></i>
+										<span class="title">机型统计</span>
 									</a>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
 							<a href="" class="nav-link nav-toggle">
-								<i class="icon-home"></i>
+								<i class="icon-users"></i>
 								<span class="title">用戶管理</span>
 								<span class="arrow"></span>
 							</a>
 							<ul class="sub-menu">
 								<li class="nav-item">
 									<a href="account_management.html" class="nav-link">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-user"></i>
 										<span class="title">账号管理</span>
 									</a>
 								</li>
 								<li class="nav-item">
 									<a href="log_monitoring.html" class="nav-link">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-doc"></i>
 										<span class="title">日志监控</span>
 									</a>
 								</li>
 								<li class="nav-item">
 									<a href="version.html" class="nav-link">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-info"></i>
 										<span class="title">后台版本</span>
 									</a>
 								</li>
 								<li class="nav-item">
 									<a href="permission_assignment.html" class="nav-link">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-user-follow"></i>
 										<span class="title">账号分配</span>
 									</a>
 								</li>
@@ -177,9 +161,9 @@
 				</div>
 			</div>
 			<!--右侧内容开始-->
-			<div class="page-content-wrapper">
+			<div class="page-content-wrapper ">
 				<!-- 右侧BODY开始 -->
-				<div class="page-content">
+				<div class="page-content " >
 					<!-- 右侧内容头部开始-->
 					<div class="page-bar">
 						<ul class="page-breadcrumb">
@@ -194,8 +178,49 @@
 					</div>
 					<!-- 右侧内容头部结束-->
 					<!-- 右侧顶部四个数据显示框开始-->
-					<div class="row widget-row" style="padding-top: 20px">
+					<div class="row widget-row bg_color" style="padding-top: 20px">
+						<!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
+								<h4 class="widget-thumb-heading">入库明细</h4>
+								<div class="widget-thumb-wrap">
+									<div class="widget-thumb-body">
+										<span class="widget-thumb-body-stat" data-counter="counterup" data-value="7,644">7,644</span>
+
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
+								<h4 class="widget-thumb-heading">累积激活</h4>
+								<div class="widget-thumb-wrap">
+									<div class="widget-thumb-body">
+										<span class="widget-thumb-body-stat" data-counter="counterup" data-value="1,293">1,293</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
+								<h4 class="widget-thumb-heading">存货明细</h4>
+								<div class="widget-thumb-wrap">
+									<div class="widget-thumb-body">
+										<span class="widget-thumb-body-stat" data-counter="counterup" data-value="815">815</span>
+									</div>
+								</div>
+							</div>
+						</div>-->
+						<!--<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
+								<h4 class="widget-thumb-heading">昨日激活</h4>
+								<div class="widget-thumb-wrap">
+									<div class="widget-thumb-body">
+										<span class="widget-thumb-body-stat" data-counter="counterup" data-value="5,071">5,071</span>
+									</div>
+								</div>
+							</div>
+						</div>-->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 							<div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
 								<h4 class="widget-thumb-heading">入库明细</h4>
 								<div class="widget-thumb-wrap">
@@ -239,12 +264,12 @@
 					</div>
 					<!--右侧顶部四个数据显示框结束-->
 					<!--右侧图表开始-->
-					<div class="row">
+					<div class="row bg_color">
 						<div class="col-md-12">
 							<div class="portlet light portlet-fit bordered">
 								<div class="portlet-title">
 									<div class="caption">
-										<i class=" icon-layers font-green"></i>
+										<i class=" icon-bar-chart font-green"></i>
 										<span class="caption-subject font-green bold uppercase">新增趋势图</span>
 									</div>
 								</div>
@@ -302,6 +327,7 @@
 		<script src="../assets/global/plugins/respond.min.js"></script>
 		<script src="../assets/global/plugins/excanvas.min.js"></script> 
 		<![endif]-->
+		<script src="../assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
 		<script src="../assets/global/plugins/jquery.min.js" type="text/javascript">
 		</script>
 		<script src="./js/echarts.js" type="text/javascript"></script>
@@ -311,6 +337,10 @@
 		<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
 		<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
 		<script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+		<!-- 数字动画 开始-->
+        <script src="../assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+        <!-- 数字动画结束-->
 		<script type="text/javascript">
 			//新增趋势图标数据
 			var line_cahr = echarts.init(document.getElementById('_line'));
@@ -402,7 +432,7 @@
 						},
 						'magicType': {
 							'show': true,
-							'type': ['line', 'bar', 'stack', 'tiled']
+							'type': ['line', 'bar', ]
 						},
 						'restore': {
 							'show': true

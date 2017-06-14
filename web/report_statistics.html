@@ -67,9 +67,15 @@
 			<div class="top-menu">
 				<ul class="nav navbar-nav pull-right">
 					<li class="dropdown dropdown-user">
-						<a href="javascript:;" class="dropdown-toggle">
+						<a href="" class="dropdown-toggle">
 							<img alt="" class="img-circle" src="../resource/images/head.png" />
 							<span class="username username-hide-on-mobile"> 超级管理员</span>
+							<i></i>
+						</a>
+					</li>
+					<li class="dropdown dropdown-user">
+						<a href="modify_password.html" class="dropdown-toggle">
+							<span class="username username-hide-on-mobile" style="color: #79869a;"> 修改密码</span>
 							<i></i>
 						</a>
 					</li>
@@ -90,84 +96,89 @@
 				<div class="page-sidebar navbar-collapse collapse">
 					<!--左侧菜单开始-->
 					<ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
-						<li class="nav-item ">
+						<li class="nav-item">
 							<a href="index.html" class="nav-link nav-toggle">
 								<i class="icon-home"></i>
 								<span class="title">首页</span>
-								<span class="selected"></span>
 							</a>
 						</li>
-						<li class="heading">
+						<li class="heading ">
 							<h3 class="uppercase">设备</h3>
 						</li>
 						<li class="nav-item active open">
 							<a href="javascript:;" class="nav-link nav-toggle">
-								<i class="icon-home"></i>
+								<i class="icon-grid"></i>
 								<span class="title">设备统计</span>
-								<span class="arrow"></span>
+								<span class="arrow open"></span>
 								<span class="selected"></span>
 							</a>
 							<ul class="sub-menu">
 								<li class="nav-item ">
 									<a href="regional_distribution.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-map"></i>
 										<span class="title">地区分布</span>
 									</a>
 								</li>
 								<li class="nav-item  ">
 									<a href="device_activation.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-cloud-upload"></i>
 										<span class="title">设备激活</span>
 									</a>
 								</li>
 								<li class="nav-item  ">
 									<a href="device_active.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-graph"></i>
 										<span class="title">设备活跃</span>
 									</a>
 								</li>
 								<li class="nav-item  ">
 									<a href="device_add.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-note"></i>
 										<span class="title">设备入库</span>
 									</a>
 								</li>
 								<li class="nav-item  active">
 									<a href="report_statistics.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-notebook"></i>
 										<span class="title">报表统计</span>
+									</a>
+								</li>
+								<li class="nav-item  ">
+									<a href="device_statistics.html" class="nav-link">
+										<i class="icon-screen-tablet"></i>
+										<span class="title">机型统计</span>
 									</a>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
 							<a href="" class="nav-link nav-toggle">
-								<i class="icon-home"></i>
+								<i class="icon-users"></i>
 								<span class="title">用戶管理</span>
 								<span class="arrow"></span>
 							</a>
 							<ul class="sub-menu">
 								<li class="nav-item">
 									<a href="account_management.html" class="nav-link">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-user"></i>
 										<span class="title">账号管理</span>
 									</a>
 								</li>
 								<li class="nav-item">
 									<a href="log_monitoring.html" class="nav-link">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-doc"></i>
 										<span class="title">日志监控</span>
 									</a>
 								</li>
 								<li class="nav-item">
 									<a href="version.html" class="nav-link">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-info"></i>
 										<span class="title">后台版本</span>
 									</a>
 								</li>
 								<li class="nav-item">
 									<a href="permission_assignment.html" class="nav-link">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-user-follow"></i>
 										<span class="title">账号分配</span>
 									</a>
 								</li>
@@ -194,7 +205,7 @@
 					</div>
 					<!--右侧头部结束-->
 					<!-- 条件开始 -->
-					<div class="row " style="margin-top: 20px;">
+					<div class="row bg_color" style="padding-top: 20px;">
 						<div class="col-md-12">
 							<div class="portlet light portlet-fit bordered">
 								<div class="portlet-body ">
@@ -292,9 +303,9 @@
 					<!--条件结束-->
 						
 					<!--表格开始-->
-					<div class="row">
+					<div class="row bg_color">
 						<div class="col-md-12">
-							<div class="portlet light portlet-fit bordered" style="padding: 10px;">
+							<div class="portlet light portlet-fit bordered" style="padding: 20px;">
 								<table id="_table" class="table table-striped table-bordered" cellspacing="0" width="100%">
 									<thead width="100%">
 										<tr>

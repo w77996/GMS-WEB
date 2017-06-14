@@ -59,6 +59,12 @@ License: You must have a valid license purchased only from themeforest(the above
 							 <i></i>
 						</a>
 					</li>
+					<li class="dropdown dropdown-user">
+						<a href="modify_password.html" class="dropdown-toggle">
+							<span class="username username-hide-on-mobile" style="color: #79869a;"> 修改密码</span>
+							<i></i>
+						</a>
+					</li>
 					<li class="dropdown dropdown-quick-sidebar-toggler">
 						<a href="login.html" class="dropdown-toggle">
 							<i class="icon-logout"></i>
@@ -77,79 +83,90 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="page-sidebar navbar-collapse collapse">
 					<!-- 左侧菜单内容开始-->
 					<ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
-						<li class="nav-item ">
+						<li class="nav-item">
 							<a href="index.html" class="nav-link nav-toggle">
 								<i class="icon-home"></i>
 								<span class="title">首页</span>
 							</a>
 						</li>
-						<li class="heading">
+						<li class="heading ">
 							<h3 class="uppercase">设备</h3>
 						</li>
-						<li class="nav-item  active open">
+						<li class="nav-item active open">
 							<a href="javascript:;" class="nav-link nav-toggle">
-								<i class="icon-home"></i>
+								<i class="icon-grid"></i>
 								<span class="title">设备统计</span>
+								<span class="arrow open"></span>
 								<span class="selected"></span>
-								<span class="arrow"></span>
 							</a>
 							<ul class="sub-menu">
-								<li class="nav-item active open ">
+								<li class="nav-item active">
 									<a href="regional_distribution.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-map"></i>
 										<span class="title">地区分布</span>
-										<span class="selected"></span>
 									</a>
 								</li>
 								<li class="nav-item  ">
 									<a href="device_activation.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-cloud-upload"></i>
 										<span class="title">设备激活</span>
 									</a>
 								</li>
 								<li class="nav-item  ">
 									<a href="device_active.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-graph"></i>
 										<span class="title">设备活跃</span>
 									</a>
 								</li>
 								<li class="nav-item  ">
 									<a href="device_add.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-note"></i>
 										<span class="title">设备入库</span>
 									</a>
 								</li>
 								<li class="nav-item  ">
 									<a href="report_statistics.html" class="nav-link ">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-notebook"></i>
 										<span class="title">报表统计</span>
+									</a>
+								</li>
+								<li class="nav-item  ">
+									<a href="device_statistics.html" class="nav-link">
+										<i class="icon-screen-tablet"></i>
+										<span class="title">机型统计</span>
 									</a>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
 							<a href="" class="nav-link nav-toggle">
-								<i class="icon-home"></i>
+								<i class="icon-users"></i>
 								<span class="title">用戶管理</span>
 								<span class="arrow"></span>
 							</a>
 							<ul class="sub-menu">
 								<li class="nav-item">
 									<a href="account_management.html" class="nav-link">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-user"></i>
 										<span class="title">账号管理</span>
 									</a>
 								</li>
 								<li class="nav-item">
 									<a href="log_monitoring.html" class="nav-link">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-doc"></i>
 										<span class="title">日志监控</span>
 									</a>
 								</li>
 								<li class="nav-item">
 									<a href="version.html" class="nav-link">
-										<i class="icon-bar-chart"></i>
+										<i class="icon-info"></i>
 										<span class="title">后台版本</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="permission_assignment.html" class="nav-link">
+										<i class="icon-user-follow"></i>
+										<span class="title">账号分配</span>
 									</a>
 								</li>
 							</ul>
@@ -177,7 +194,7 @@ License: You must have a valid license purchased only from themeforest(the above
 					</div>
 					<!-- 主体头部结束-->
 					<!--tab内容开始-->
-					<div class="row">
+					<div class="row bg_color">
 						<div class="col-md-12">
 							<div class="portlet">
 								<div class="portlet-body">
@@ -191,16 +208,16 @@ License: You must have a valid license purchased only from themeforest(the above
 											</li>
 										</ul>
 										<!--内容部分开始-->
-										<div class="tab-content">
+										<div class="tab-content ">
 											<!--新增tab开始-->
 											<div class="tab-pane  active" id="tab_add">
 												<!--地区分布地图开始-->
-												<div class="row">
+												<div class="row ">
 													<div class="col-md-12">
 														<div class="portlet light portlet-fit bordered">
 															<div class="portlet-title">
 																<div class="caption">
-																	<i class=" icon-layers font-green"></i>
+																	<i class=" icon-globe font-green"></i>
 																	<span class="caption-subject font-green bold uppercase">设备新增全球分布图</span>
 																</div>
 															</div>
@@ -216,7 +233,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												</div>
 												<!--地区分布地图结束-->
 												<!--底部表格开始-->
-												<div class="row">
+												<div class="row ">
 													<div class="col-md-12">
 														<div class="portlet light portlet-fit bordered">
 															<div class="portlet-title">
@@ -253,7 +270,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														<div class="portlet light portlet-fit bordered">
 															<div class="portlet-title">
 																<div class="caption">
-																	<i class=" icon-layers font-green"></i>
+																	<i class=" icon-globe font-green"></i>
 																	<span class="caption-subject font-green bold uppercase">设备活跃地区分布图</span>
 																</div>
 															</div>
@@ -1125,8 +1142,8 @@ License: You must have a valid license purchased only from themeforest(the above
 			});
 			option2 = {
 				title: {
-					text: '设备活跃全球分布图',
-					subtext: 'from United Nations, Total device(thousands)',
+					/*text: '设备活跃全球分布图',
+					subtext: 'from United Nations, Total device(thousands)',*/
 					x: 'center',
 					y: 'top'
 				},
