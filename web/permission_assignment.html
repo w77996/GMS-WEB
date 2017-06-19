@@ -413,14 +413,15 @@
 							<strong>身份</strong>
 						</div>
 						<div class="col-md-10">
-							<select name="country" class="form-control" style="width: 350px;">
-								<option value="AF">工作人员</option>
-								<option value="AL">管理员</option>
+							<select id="identify_select" name="country" class="form-control" style="width: 350px;" onChange="GaiBian(this)">
+								<option value="manager">管理员</option>
+								<option value="department">事业部</option>
+								<option value="worker">工作人员</option>
 							</select>
 						</div>
 					</div>
 					<label class="control-label "></label>
-					<div class="form-group">
+					<div id="permission_department_select" class="form-group">
 						<div class="col-md-2" style="margin-top: 5px;">
 							<strong>事业部</strong>
 						</div>
@@ -432,7 +433,7 @@
 							</select>
 						</div>
 					</div>
-					<div class="form-group">
+					<div id="permission_web" class="form-group">
 						<div class="col-md-6" style="margin-top: 25px;">
 							<div class=" col-md-offset-4 col-sm-10">
 								<div class="checkbox">
@@ -444,8 +445,8 @@
 							<div class="col-md-offset-4  col-sm-10">
 								<div class="checkbox">
 									<label>
-								          <input type="checkbox">设备激活
-								        </label>
+								        <input type="checkbox">设备激活
+								    </label>
 								</div>
 							</div>
 							<div class="col-md-offset-4  col-sm-10">
@@ -494,10 +495,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="form-group">
-						<hr style="size: 5px;color: #000000;" />
-					</div>
-					<div class="form-group">
+					<div id="permission_sniput" class="form-group">
 						<div class="col-md-6" style="margin-top: 25px;">
 							<div class="col-md-offset-4  col-sm-10">
 								<div class="checkbox">
@@ -508,14 +506,13 @@
 							</div>
 						</div>
 					</div>
-					
+					<label class="control-label "></label>
+					<div class="form-actions" style="margin-top: 10px;">
+						<button type="submit" class="btn green btn-block uppercase" style="width: 240px;margin: 0 auto;padding-top: 10px;">添加</button>
+					</div>
 				</form>
 			</div>
-			<div class="modal-footer">
-				<div class="form-actions">
-					<button type="submit" class="btn green btn-block uppercase" style="width: 240px;margin: 0 auto;padding-top: 10px;">添加</button>
-				</div>
-			</div>
+
 		</div>
 		<!-- 底部内容开始-->
 		<div class="page-footer">
@@ -626,10 +623,32 @@
 
 				$('#_all_account_table tbody').on('click', 'button', function() {
 					var data = table.row($(this).parents('tr')).data();
-
 				});
-
+				$('#permission_sniput').hide();
+				$('#permission_web').hide();
+				$('#permission_department_select').hide();
+				$('#permission_sniput').hide();
 			});
+
+			function GaiBian(dat) {
+				if(dat.options[dat.selectedIndex].text == '事业部') {
+					//alert(dat.options[dat.selectedIndex].text);
+					$('#permission_department_select').show();
+					$('#permission_sniput').hide();
+					$('#permission_sniput').hide();
+					$('#permission_web').hide();
+				}
+				if(dat.options[dat.selectedIndex].text == '管理员') {
+					$('#permission_web').hide();
+					$('#permission_department_select').hide();
+					$('#permission_sniput').hide();
+				}
+				if(dat.options[dat.selectedIndex].text == '工作人员') {
+					$('#permission_sniput').show();
+					$('#permission_web').show();
+					$('#permission_department_select').show();
+				}
+			}
 		</script>
 	</body>
 
