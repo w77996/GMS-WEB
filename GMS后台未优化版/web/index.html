@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<meta content="" name="description">
+		<meta content="" name="author">
+		
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css">
+		<link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+		<link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+		<link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css">
+		<link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css">
+		<link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css">
+		<link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color">
+
+		<style type="text/css">
+			
+		</style>
+
+	</head>
+
+	<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+		<!--网页头部开始-->
+		<div class="page-header navbar navbar-fixed-top">
+			<div class="page-logo">
+				<a href="index.html">
+					<img src="../resource/images/logo.png" alt="logo" class="logo-default"> </a>
+				<div class="menu-toggler sidebar-toggler"> </div>
+			</div>
+			<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
+			<!-- 网页头部右侧开始-->
+			<div class="top-menu">
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown dropdown-user">
+						<a href="javascript:;" class="dropdown-toggle">
+							<img alt="" class="img-circle" src="../resource/images/head.png" />
+							<span class="username username-hide-on-mobile"> 超级管理员</span>
+							<i></i>
+						</a>
+					</li>
+					<li class="dropdown dropdown-user">
+						<a href="modify_password.html" class="dropdown-toggle">
+							<span class="username username-hide-on-mobile" style="color:#79869a;">修改密码<!--<a href="modify_password.html">修改密码</a>--></span>
+							<i></i>
+						</a>
+					</li>
+					<li class="dropdown dropdown-quick-sidebar-toggler">
+						<a href="login.html" class="dropdown-toggle">
+							<i class="icon-logout"></i>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+			<!--网页头部右侧结束-->
+		</div>
+		<!--网页头部结束-->
+		<div class="clearfix"> </div>
+		<!--右侧网页内容开始-->
+		<div class="page-container">
+			<div class="page-sidebar-wrapper" >
+				<div class="page-sidebar navbar-collapse collapse">
+					<!--左侧菜单开始-->
+					<ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+						<li class="nav-item active open">
+							<a href="index.html" class="nav-link nav-toggle">
+								<i class="icon-home"></i>
+								<span class="title">首页</span>
+								<span class="selected"></span>
+							</a>
+						</li>
+						<li class="heading ">
+							<h3 class="uppercase">设备</h3>
+						</li>
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link nav-toggle">
+								<i class="icon-grid"></i>
+								<span class="title">设备统计</span>
+								<span class="arrow"></span>
+							</a>
+							<ul class="sub-menu">
+								<li class="nav-item ">
+									<a href="regional_distribution.html" class="nav-link ">
+										<i class="icon-map"></i>
+										<span class="title">地区分布</span>
+									</a>
+								</li>
+								<li class="nav-item  ">
+									<a href="device_activation.html" class="nav-link ">
+										<i class="icon-cloud-upload"></i>
+										<span class="title">设备激活</span>
+									</a>
+								</li>
+								<li class="nav-item  ">
+									<a href="device_active.html" class="nav-link ">
+										<i class="icon-graph"></i>
+										<span class="title">设备活跃</span>
+									</a>
+								</li>
+								<li class="nav-item  ">
+									<a href="device_add.html" class="nav-link ">
+										<i class="icon-note"></i>
+										<span class="title">设备入库</span>
+									</a>
+								</li>
+								<li class="nav-item  ">
+									<a href="report_statistics.html" class="nav-link ">
+										<i class="icon-notebook"></i>
+										<span class="title">报表统计</span>
+									</a>
+								</li>
+								<li class="nav-item  ">
+									<a href="device_statistics.html" class="nav-link">
+										<i class="icon-screen-tablet"></i>
+										<span class="title">机型统计</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link nav-toggle">
+								<i class="icon-users"></i>
+								<span class="title">用戶管理</span>
+								<span class="arrow"></span>
+							</a>
+							<ul class="sub-menu">
+								<li class="nav-item">
+									<a href="account_management.html" class="nav-link">
+										<i class="icon-user"></i>
+										<span class="title">账号管理</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="log_monitoring.html" class="nav-link">
+										<i class="icon-doc"></i>
+										<span class="title">日志监控</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="version.html" class="nav-link">
+										<i class="icon-info"></i>
+										<span class="title">后台版本</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="permission_assignment.html" class="nav-link">
+										<i class="icon-user-follow"></i>
+										<span class="title">账号分配</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<!--左侧菜单结束-->
+				</div>
+			</div>
+			<!--右侧内容开始-->
+			<div class="page-content-wrapper ">
+				<!-- 右侧BODY开始 -->
+				<div class="page-content " >
+					<!-- 右侧内容头部开始-->
+					<div class="page-bar">
+						<ul class="page-breadcrumb">
+							<li>
+								<a href="index.html">Home</a>
+								<i class="fa fa-angle-right"></i>
+							</li>
+							<li>
+								<span>首页</span>
+							</li>
+						</ul>
+					</div>
+					<!-- 右侧内容头部结束-->
+					<!-- 右侧顶部四个数据显示框开始-->
+					<div class="row widget-row bg_color" style="padding-top: 20px">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
+								<h4 class="widget-thumb-heading">入库明细</h4>
+								<div class="widget-thumb-wrap">
+									<div class="widget-thumb-body">
+										<span class="widget-thumb-body-stat" data-counter="counterup" data-value="7,644">7,644</span>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
+								<h4 class="widget-thumb-heading">累积激活</h4>
+								<div class="widget-thumb-wrap">
+									<div class="widget-thumb-body">
+										<span class="widget-thumb-body-stat" data-counter="counterup" data-value="1,293">1,293</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
+								<h4 class="widget-thumb-heading">存货明细</h4>
+								<div class="widget-thumb-wrap">
+									<div class="widget-thumb-body">
+										<span class="widget-thumb-body-stat" data-counter="counterup" data-value="815">815</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 bordered">
+								<h4 class="widget-thumb-heading">昨日激活</h4>
+								<div class="widget-thumb-wrap">
+									<div class="widget-thumb-body">
+										<span class="widget-thumb-body-stat" data-counter="counterup" data-value="5,071">5,071</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--右侧顶部四个数据显示框结束-->
+					<!--右侧图表开始-->
+					<div class="row bg_color">
+						<div class="col-md-12">
+							<div class="portlet light portlet-fit bordered">
+								<div class="portlet-title">
+									<div class="caption">
+										<i class=" icon-bar-chart font-green"></i>
+										<span class="caption-subject font-green bold uppercase">新增趋势图</span>
+									</div>
+								</div>
+								<div class="portlet-body">
+									<button type="button" class="btn btn-success" style="bockground-color: rgba(89,0,127,1)">新增</button>
+									<button type="button" class="btn red-mint">活跃</button>
+									<div id="_line" class="main" style="height: 250px;-webkit-tap-highlight-color: transparent; -webkit-user-select: none; cursor: default; background-color: rgba(0, 0, 0, 0);padding-top: 10px">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="portlet light portlet-fit bordered">
+								<div class="portlet-title">
+									<div class="caption">
+										<i class=" icon-layers font-green"></i>
+										<span class="caption-subject font-green bold uppercase">库存图</span>
+									</div>
+								</div>
+								<div class="portlet-body">
+									<div class="row" style="padding-top: 20px">
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+											<div id="_bar" style="height: 500px;  -webkit-tap-highlight-color: transparent; -webkit-user-select: none; cursor: default; background-color: rgba(0, 0, 0, 0);padding-top: 15px;">
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+											<div id="_pie" style="height: 500px; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; cursor: default; background-color: rgba(0, 0, 0, 0);padding-top: 20px; ">
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--右侧图表结束-->
+				</div>
+				<!-- 右侧BODY结束-->
+			</div>
+			<!--右侧内容结束-->
+		</div>
+		<!--右侧网页内容结束-->
+		<!-- 底部内容开始-->
+		<div class="page-footer">
+			<div class="page-footer-inner"> 2017 &copy; Water World.
+				<a href="" title="" target="_blank">Water World</a>			
+			</div>
+			<div class="scroll-to-top">
+				<i class="icon-arrow-up"></i>
+			</div>
+		</div>
+		<!-- 底部内容结束-->
+		<!--[if lt IE 9]>
+		<script src="../assets/global/plugins/respond.min.js"></script>
+		<script src="../assets/global/plugins/excanvas.min.js"></script> 
+		<![endif]-->
+		<script src="../assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+		<script src="../assets/global/plugins/jquery.min.js" type="text/javascript">
+		</script>
+		<script src="./js/echarts.js" type="text/javascript"></script>
+		<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+		<script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+		<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+		<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+		<script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+		<!-- 数字动画 开始-->
+        <script src="../assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+        <!-- 数字动画结束-->
+		<script type="text/javascript">
+			//新增趋势图标数据
+			var line_cahr = echarts.init(document.getElementById('_line'));
+			option = {
+				title: {
+					text: '新增趋势图'
+				},
+				tooltip: {
+					trigger: 'axis'
+				},
+				legend: {
+					data: ['今日新增', '昨日新增']
+				},
+				grid: {
+					left: '3%',
+					right: '4%',
+					bottom: '3%',
+					containLabel: true
+				},
+				toolbox: { //可视化的工具箱
+					'show': true,
+					x: 'right',
+					'feature': {
+						'dataView': {
+							'show': true,
+							'readOnly': false
+						},
+						'magicType': {
+							'show': true,
+							'type': ['line', 'bar', 'stack', 'tiled']
+						},
+						'restore': {
+							'show': true
+						},
+						'saveAsImage': {
+							'show': true
+						}
+					}
+				},
+				xAxis: {
+					type: 'category',
+					boundaryGap: false,
+					data: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '0', '1', '2', '3', '4', '5', '6', '7', '8']
+				},
+				yAxis: [{
+					type: 'value',
+					boundaryGap: false,
+					name: '新增数',
+				}, {
+					type: 'value',
+					oundaryGap: false,
+					max: 1,
+					min: 0,
+				}],
+				series: [{
+						name: '今日新增',
+						type: 'line',
+						stack: '总量',
+						data: [120, 132, 101, 134, 90, 230, 210, 120, 132, 101, 134, 90, 230, 210, 134, 90, 230, 210]
+					}, {
+						name: '昨日新增',
+						type: 'line',
+						stack: '总量',
+						data: [220, 182, 191, 234, 290, 330, 710, 220, 182, 191, 234, 290, 330, 310, 220, 182, 191, 120]
+					}
+
+				]
+			};
+			line_cahr.setOption(option);
+			//库存，销量数据柱状图
+			var bar_echarts = echarts.init(document.getElementById('_bar'));
+			option1 = {
+				title: {
+					text: '设备数',
+				},
+				tooltip: {
+					trigger: 'axis'
+				},
+				legend: {
+					data: ['库存', '销售']
+				},
+				toolbox: {
+					'show': true,
+					x: 'right',
+					'feature': {
+						'dataView': {
+							'show': true,
+							'readOnly': false
+						},
+						'magicType': {
+							'show': true,
+							'type': ['line', 'bar', ]
+						},
+						'restore': {
+							'show': true
+						},
+						'saveAsImage': {
+							'show': true
+						}
+					}
+				},
+				calculable: true,
+				xAxis: [{
+					type: 'category',
+					data: ['1部', 'd2', '3', '4', '5', '6', '7', '8', '9', '0', '11', '12']
+				}],
+				yAxis: [{
+					type: 'value'
+				}],
+				series: [{
+					name: '库存',
+					type: 'bar',
+					data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+				}, {
+					name: '销售',
+					type: 'bar',
+					data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+				}]
+			};
+			bar_echarts.setOption(option1);
+			//饼状图数据
+			var pie_echarts = echarts.init(document.getElementById('_pie'));
+			option2 = {
+				title: {
+					text: '各事业部库存占总数比',
+					subtext: '纯属虚构',
+					x: 'center'
+				},
+				tooltip: {
+					trigger: 'item',
+					formatter: "{a} <br/>{b} : {c} ({d}%)"
+				},
+				/*legend: {
+					orient: 'vertical',
+					x: 'left',
+					data: ['1事业部', '2事业部', '3事业部', '4事业部', '5事业部']
+				},*/
+				toolbox: {
+					show: true,
+					feature: {
+						dataView: {
+							show: true,
+							readOnly: false
+						},
+						magicType: {
+							show: true,
+							type: ['pie', 'funnel'],
+							option: {
+								funnel: {
+									x: '25%',
+									width: '50%',
+									funnelAlign: 'left',
+									max: 1548
+								}
+							}
+						},
+						restore: {
+							show: true
+						},
+						saveAsImage: {
+							show: true
+						}
+					}
+				},
+				calculable: true,
+				series: [{
+					name: '访问来源',
+					type: 'pie',
+					radius: '55%',
+					center: ['50%', '60%'],
+					data: [{
+						value: 335,
+						name: '1事业部'
+					}, {
+						value: 310,
+						name: '2事业部'
+					}, {
+						value: 234,
+						name: '3事业部'
+					}, {
+						value: 135,
+						name: '4事业部'
+					}, {
+						value: 1548,
+						name: '5事业部'
+					}],
+					itemStyle:{
+						normal:{
+							label:{
+								show:true,
+								 formatter:"{b}:({d}%)"
+							},
+							labelLine:{
+								show:true
+							}
+						}
+					}
+				}]
+			};
+			pie_echarts.setOption(option2);
+		</script>
+	</body>
+
+</html>
